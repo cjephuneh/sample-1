@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUTOBASICS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <!<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/DANKA 2.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">GARAGE SERVICE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <!----about us content----->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the best in town</h1>
+                <p>Autobasicsbeing the best in town. nothing can match what we do. we take pride in our efforts </p>
+                <a href="Explore now"></a>
+            </div>
+            <div class="about-col">
+                <img src="images/underwash.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-----Footer------>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Autobasicshas been in existance for the last two years plus <br />
+        and has not only served but also satisfied thousands of customers within
+        and without the region
+      </p>
+      <div class="icons">
+        <!---<i class="material-icons">facebook</i>
+        <i class="material-icons">whatsapp</i>
+        <i class="material-icons">call</i>
+        <i class="material-icons">telegram</i>--->
+      </div>
+      <p>Services done with love <i class="fa fa-heart-0"></i> and passion</p>
+    </section>
+
+    <!------JavaScript for toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
